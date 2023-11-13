@@ -22,32 +22,33 @@ public class Usuario{
         this.password = password;
     }
 
-    //Get sirve para devolvernos la variable. En este caso sería la variable Name.
+    //Get sirve para devolvernos las variables tal cual.
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getSurname() {
-        return surname;
+        return this.surname;
     }
 
     public Integer getPostalCode() {
-        return postalCode;
+        return this.postalCode;
     }
 
     public String getAddress() {
-        return address;
+        return this.address;
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
-    //Set sirve para modificar la variable. En este caso la variable Name.
+
+    //Set sirve para poder modificar las variables.
     public void setName(String name) {
         this.name = name;
     }
@@ -72,8 +73,21 @@ public class Usuario{
         this.password = password;
     }
 
-    //El toString hay que llamarlo de alguna forma y en este caso le ponemos A (nunca números). Es para tener todas las variables aquí recogida y en el orden que yo quiera
-    public String toStringA(Usuario us){
-        return us.getName() + " " + us.getSurname() + " " + us.getPostalCode() + " " + getAddress() + " " + getEmail() + " " + getPassword();
+
+    public Boolean check(String email, String password){
+        if(this.email.equals(email) && this.password.equals(password)){
+            System.out.println("Correcto");
+            return true;
+        }else {
+            System.out.println("Incorrecto");
+            return false;
+        }
+
     }
+
+    //El toString hay que llamarlo de alguna forma y en este caso le ponemos A (nunca números). Es para tener todas las variables aquí recogida y en el orden que yo quiera
+
+    //public String toStringA(Usuario us){
+        //return us.getName() + " " + us.getSurname() + " " + us.getPostalCode() + " " + getAddress() + " " + getEmail() + " " + getPassword();
+    //}
 }

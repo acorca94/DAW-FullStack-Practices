@@ -24,6 +24,6 @@ if __name__ == '__main__':
     elif respuesta == "registro":
         print("Introduce tus datos de registro: ")
         new_User.newUsuario()
-        print("¡Perfecto! Ya eres uno más de nosotros.")
+        print("¡Perfecto! Ya eres uno más de nosotros")
     else:
         pass

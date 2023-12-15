@@ -1,13 +1,13 @@
-//CLASE
-public class People {
-
-    //ATRIBUTOS DE CLASE
+//CLASE persona
+public class People implements Human{
+    //ATRIBUTOS de clase persona
     private String dni;
     private String name;
     private Integer age;
     private String gender;
 
-    //CONSTRUCTOR DE PEOPLE
+
+    //CONSTRUCTOR de clase persona
     public People(String dni, String name, Integer age, String gender){
         this.dni = dni;
         this.name = name;
@@ -16,7 +16,7 @@ public class People {
     }
 
 
-    //GETTERS DE PEOPLE
+    //GETTERS de clase persona
     public String getDni(){
         return this.dni;
     }
@@ -34,8 +34,7 @@ public class People {
     }
 
 
-    //SETTERS DE PEOPLE
-
+    //SETTERS de clase persona
     public void setDni(String dni){ this.dni = dni; }
 
     public void setName(String name){ this.name = name; }

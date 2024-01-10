@@ -3,7 +3,7 @@ import java.time.LocalDate;
 //CLASE medico que extiende de persona
 public class Medic extends People {
     //ATRIBUTOS de clase medico solo
-    private double salary;
+    private Double salary;
     private LocalDate start_date;
     private String area;
 

@@ -43,4 +43,14 @@ public class People implements Human{
 
     public void setGender(String gender){ this.gender = gender; }
 
+
+    @Override
+    public String especialidad() {
+        return null;
+    }
+
+    @Override
+    public String comer() {
+        return null;
+    }
 }

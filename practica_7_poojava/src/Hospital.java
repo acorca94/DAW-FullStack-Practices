@@ -3,14 +3,14 @@ public class Hospital {
     //ATRIBUTOS de clase hospital
     private String name;
     private String cif;
-    private String location;
+    private Address address;
 
 
     //CONSTRUCTOR de la clase hospital
-    public Hospital(String name, String cif, String location){
+    public Hospital(String name, String cif, Address address){
         this.name = name;
         this.cif = cif;
-        this.location = location;
+        this.address = address;
     }
 
 
@@ -21,8 +21,8 @@ public class Hospital {
         return  cif;
     }
 
-    public String location(){
-        return location;
+    public Address address(){
+        return address;
     }
 
 
@@ -35,7 +35,7 @@ public class Hospital {
         this.cif = cif;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setLocation(Address address) {
+        this.address = address;
     }
 }

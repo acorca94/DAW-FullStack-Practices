@@ -5,11 +5,11 @@ public class Medic extends People {
     //ATRIBUTOS de clase medico solo
     private Double salary;
     private LocalDate start_date;
-    private String area;
+    private Area area;
 
 
     //CONSTRUCTOR de clase medico y hereda los atributos de clase persona (lo que esta dentro de super)
-    public Medic(String dni, String name, Integer age, String gender, double salary, LocalDate start_date, String area){
+    public Medic(String dni, String name, Integer age, String gender, double salary, LocalDate start_date, Area area){
         super(dni, name, age, gender);
 
         this.salary = salary;
@@ -27,7 +27,7 @@ public class Medic extends People {
         return start_date;
     }
 
-    public String getArea() {
+    public Area getArea() {
         return area;
     }
 
@@ -41,7 +41,7 @@ public class Medic extends People {
         this.start_date = start_date;
     }
 
-    public void setArea(String area) {
+    public void setArea(Area area) {
         this.area = area;
     }
 

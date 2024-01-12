@@ -28,7 +28,5 @@ public class Main {
         Contract contratomedicoA = new Contract(start_dateA, medicoA, hospitalA);
         Contract contratomedicoB = new Contract(start_dateB, medicoB, hospitalB);
         Contract contratomedicoC = new Contract(start_dateC, medicoC, hospitalC);
-
-        System.out.println();
     }
 }

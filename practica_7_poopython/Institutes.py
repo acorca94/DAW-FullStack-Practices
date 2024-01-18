@@ -9,6 +9,8 @@ class Institutes:
         self.__address = address
         self.__course = course
 
+        
+
     # GETTERS
     def __getname(self):
         return self.__name

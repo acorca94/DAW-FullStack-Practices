@@ -18,27 +18,33 @@ class Teachers(People):
         self.__department = department
 
     #GETTERS
-    def __getname(self):
-        return self.__name
+    def __getstart_date(self):
+        return self.__start_date
 
-    def __getdni(self):
-        return self.__dni
+    def __getsalary(self):
+        return self.__salary
 
-    def __getage(self):
-        return self.__age
+    def __getaddress(self):
+        return self.__address
 
-    def __getgender(self):
-        return self.__gender
+    def __getsubject(self):
+        return self.__subject
+
+    def __getdepartment(self):
+        return self.__department
 
     #SETTERS
-    def __setname(self, name):
-        self.__name = name
+    def __setstart_date(self, start_date):
+        self.__start_date = start_date
 
-    def __setdni(self, dni):
-        self.__dni = dni
+    def __setsalary(self, salary):
+        self.__salary = salary
 
-    def __setage(self, age):
-        self.__age = age
+    def __setaddress(self, address):
+        self.__address = address
 
-    def __setgender(self, gender):
-        self.__gender = gender
+    def __setsubject(self, subject):
+        self.__subject = subject
+
+    def __setdepartment(self, department):
+        self.__department = department

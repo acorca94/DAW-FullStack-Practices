@@ -1,0 +1,34 @@
+import Students
+import Courses
+import Subjects
+
+
+#CLASE ADMINISTRATIVE HEREDANDO DE PEOPLE
+class Addresses:
+
+    # CONSTRUCTOR
+    def __init__(self, student: Students, course: Courses, subject: Subjects):
+        self.__student = student
+        self.__course = course
+        self.__subject = subject
+
+    # GETTERS
+    def __getstudent(self):
+        return self.__student
+
+    def __getcourse(self):
+        return self.__course
+
+    def __getsubject(self):
+        return self.__subject
+
+
+    #SETTERS
+    def __setstudent(self, student):
+        self.__student = student
+
+    def __setcourse(self, course):
+        self.__course = course
+
+    def __setsubject(self, subject):
+        self.__subject = subject

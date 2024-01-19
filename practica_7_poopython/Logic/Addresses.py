@@ -3,12 +3,13 @@
 class Addresses:
 
     # CONSTRUCTOR
-    def __init__(self, postal_code: int, province: str, location: str, street: str, number: int):
-        self.__postal_code = postal_code
-        self.__province = province
-        self.__location = location
+    def __init__(self, street: str, number: int, postal_code: int, location: str, province: str):
         self.__street = street
         self.__number = number
+        self.__postal_code = postal_code
+        self.__location = location
+        self.__province = province
+
 
     # GETTERS
     def __getpostal_code(self):

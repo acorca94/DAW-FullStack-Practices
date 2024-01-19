@@ -1,4 +1,6 @@
-import Teachers
+from Logic import Teachers
+
+
 class Subjects:
 
     # CONSTRUCTOR
@@ -10,7 +12,7 @@ class Subjects:
         self.__description = description
 
     # GETTERS
-    def __getteacher(self):
+    def __getteacher(self) -> Teachers:
         return self.__teacher
 
     def __getidentification(self):

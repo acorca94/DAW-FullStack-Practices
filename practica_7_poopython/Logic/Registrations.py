@@ -1,10 +1,9 @@
 import Students
-import Courses
-import Subjects
+from Logic import Students, Courses, Subjects
 
 
 #CLASE ADMINISTRATIVE HEREDANDO DE PEOPLE
-class Addresses:
+class Registrations:
 
     # CONSTRUCTOR
     def __init__(self, student: Students, course: Courses, subject: Subjects):

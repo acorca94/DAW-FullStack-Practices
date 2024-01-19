@@ -1,4 +1,4 @@
-import Addresses
+from Logic import Addresses
 import datetime
 from People import People
 

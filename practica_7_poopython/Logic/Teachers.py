@@ -1,8 +1,6 @@
 #CLASE PERSONA
-import Addresses
-import Departments
-import Subjects
-from People import People
+from Logic import Addresses, Departments, Subjects
+from Logic.People import People
 from datetime import datetime
 
 #CLASE TEACHERS HEREDANDO DE PEOPLE

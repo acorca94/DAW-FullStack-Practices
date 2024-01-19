@@ -1,8 +1,5 @@
-import Addresses
-import Subjects
-import Marks
-import Courses
-from People import People
+from Logic import Addresses, Courses, Marks, Subjects
+from Logic.People import People
 
 
 # CLASE STUDENTS HEREDANDO DE PEOPLE

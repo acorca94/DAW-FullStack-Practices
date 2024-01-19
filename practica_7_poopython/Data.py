@@ -1,0 +1,61 @@
+from Logic.Students import Students
+from Logic.Addresses import Addresses
+from Logic.Subjects import Subjects
+from Logic.Administrative import Administrative
+from Logic.Courses import Courses
+from Logic.Departments import Departments
+from Logic.Institutes import Institutes
+from Logic.Marks import Marks
+from Logic.People import People
+from Logic.Registrations import Registrations
+from Logic.Teachers import Teachers
+from datetime import datetime
+
+date_teacher1 = datetime(2020, 9, 1)
+date_teacher2 = datetime(2020, 9, 7)
+date_administrative1 = datetime(2021, 10, 5)
+date_administrative2 = datetime(2020, 8, 5)
+salary_teacher1 = 1800
+salary_teacher2 = 1600
+salary_administrative1 = 1300
+salary_administrative2 = 1300
+
+# CREACIÓN DE DIRECCIONES
+address_student1 = Addresses("Montes", 2, 41009, "Brenes", "Sevilla")
+address_student2 = Addresses("Manigua", 3, 41010, "Lebrija", "Sevilla")
+address_teacher1 = Addresses("Republica Argentina", 3, 41010, "Sevilla", "Sevilla")
+address_teacher2 = Addresses("Rafael Alberti", 5, 41018, "Tomares", "Sevilla")
+address_administrative1 = Addresses("Mar Caspio", 5, 41009, "Sevilla", "Sevilla")
+address_administrative2 = Addresses("Cigalas", 19, 41011, "Sevilla", "Sevilla")
+
+# CREACIÓN DE DEPARTAMENTOS
+department1 = Departments("Informática", 10)
+department2 = Departments("Logística", 12)
+
+# CREACIÓN DE ASIGNATURAS
+subject1 = Subjects()
+subject2 = Subjects()
+
+# CREACIÓN DE NOTAS
+mark1 = Marks()
+mark2 = Marks()
+
+# CREACIÓN DE CURSOS
+course1 = Courses()
+course2 = Courses()
+
+# CREACIÓN DE ESTUDIANTES
+student1 = Students("Marta", "34003400Y", 23, "Femenino", "marta0087@gmail.con", 23, address_student1, subject1, mark1,
+                    course1)
+student2 = Students("Carlos", "47340010L", 25, "Masculino", "carlos0087@gmail.con", 15, address_student2, subject2,
+                    mark2,
+                    course2)
+
+# CREACIÓN DE PROFESORES
+teacher1 = Teachers("Jose Angel", "47340009P", 38, "Masculino", date_teacher1, salary_teacher1, address_teacher1, subject1,
+                    department1)
+teacher2 = Teachers("Maria", "340009Y", 26, "Femenino", date_teacher2, salary_teacher2, address_teacher2, subject2, department2)
+
+# CREACIÓN DE ADMINISTRATIVOS
+administrative1 =Administrative("Julian", "34098212Y", 26, "Masculino", "Nóminas", 1300, address_administrative1, date_administrative1, )
+administrative2 = Administrative("Carla", "34000823G", 30, "Femenino", "Papeles en general", 1300, address_administrative2, date_administrative2)

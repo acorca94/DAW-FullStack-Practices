@@ -1,5 +1,6 @@
-import Addresses
-import Courses
+from Logic import Addresses, Courses
+
+
 class Institutes:
 
     # CONSTRUCTOR

@@ -15,16 +15,16 @@ class Subjects:
     def __getteacher(self) -> Teachers:
         return self.__teacher
 
-    def __getidentification(self):
+    def __getidentification(self) -> int:
         return self.__identification
 
-    def __getname(self):
+    def __getname(self) -> str:
         return self.__name
 
-    def __getcredit(self):
+    def __getcredit(self) -> int:
         return self.__credit
 
-    def __getdescription(self):
+    def __getdescription(self) -> str:
         return self.__description
 
 

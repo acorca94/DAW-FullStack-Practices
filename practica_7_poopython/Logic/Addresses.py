@@ -12,34 +12,36 @@ class Addresses:
 
 
     # GETTERS
-    def __getpostal_code(self):
-        return self.__postal_code
-
-    def __getprovince(self):
-        return self.__province
-
-    def __getlocation(self):
-        return self.__location
-
-    def __getstreet(self):
+    def __getstreet(self) -> str:
         return self.__street
 
-    def __getnumber(self):
+    def __getnumber(self) -> int:
         return self.__number
+
+    def __getpostal_code(self) -> int:
+        return self.__postal_code
+
+    def __getlocation(self) -> str:
+        return self.__location
+
+    def __getprovince(self) -> str:
+        return self.__province
+
 
 
     #SETTERS
-    def __setpostal_code(self, postal_code):
-        self.__postal_code = postal_code
-
-    def __setprovince(self, province):
-        self.__province = province
-
-    def __setlocation(self, location):
-        self.__location = location
-
     def __setstreet(self, street):
         self.__street = street
 
     def __setnumber(self, number):
         self.__number = number
+
+    def __setpostal_code(self, postal_code):
+        self.__postal_code = postal_code
+
+    def __setlocation(self, location):
+        self.__location = location
+
+    def __setprovince(self, province):
+        self.__province = province
+

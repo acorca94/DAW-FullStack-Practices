@@ -8,16 +8,16 @@ class Courses:
         self.__type = type
 
     # GETTERS
-    def __getcode(self):
+    def __getcode(self) -> int:
         return self.__code
 
-    def __getdescription(self):
+    def __getdescription(self) -> str:
         return self.__description
 
-    def __getlevel(self):
+    def __getlevel(self) -> str:
         return self.__level
 
-    def __gettype(self):
+    def __gettype(self) -> str:
         return self.__type
 
 

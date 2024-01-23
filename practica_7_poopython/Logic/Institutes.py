@@ -13,16 +13,16 @@ class Institutes:
         
 
     # GETTERS
-    def __getname(self):
+    def __getname(self) -> str:
         return self.__name
 
-    def __getcif(self):
+    def __getcif(self) -> str:
         return self.__cif
 
-    def __getaddress(self):
+    def __getaddress(self) -> Addresses:
         return self.__address
 
-    def __getcourse(self):
+    def __getcourse(self) -> Courses:
         return self.__course
 
 

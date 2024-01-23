@@ -16,16 +16,16 @@ class Administrative(People):
         self.__start_date = start_date
 
     # GETTERS
-    def __getfunctions(self):
+    def __getfunctions(self) -> str:
         return self.__functions
 
-    def __getsalary(self):
+    def __getsalary(self) -> float:
         return self.__salary
 
-    def __getaddress(self):
+    def __getaddress(self) -> Addresses:
         return self.__address
 
-    def __getstart_date(self):
+    def __getstart_date(self) -> datetime:
         return self.__start_date
 
 

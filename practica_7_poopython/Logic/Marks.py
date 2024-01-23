@@ -9,13 +9,13 @@ class Marks:
         self.__calification = calification
 
     # GETTERS
-    def __getstudent(self):
+    def __getstudent(self) -> Students:
         return self.__student
 
-    def __getsubject(self):
+    def __getsubject(self) -> Subjects:
         return self.__subject
 
-    def __getcalification(self):
+    def __getcalification(self) -> float:
         return self.__calification
 
     #SETTERS

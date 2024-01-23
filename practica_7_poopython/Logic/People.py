@@ -9,16 +9,16 @@ class People:
         self.__gender = gender
 
     #GETTERS
-    def __getname(self):
+    def __getname(self) -> str:
         return self.__name
 
-    def __getdni(self):
+    def __getdni(self) -> str:
         return self.__dni
 
-    def __getage(self):
+    def __getage(self) -> int:
         return self.__age
 
-    def __getgender(self):
+    def __getgender(self) -> str:
         return self.__gender
 
     #SETTERS

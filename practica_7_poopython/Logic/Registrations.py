@@ -12,13 +12,13 @@ class Registrations:
         self.__subject = subject
 
     # GETTERS
-    def __getstudent(self):
+    def __getstudent(self) -> Students:
         return self.__student
 
-    def __getcourse(self):
+    def __getcourse(self) -> Courses:
         return self.__course
 
-    def __getsubject(self):
+    def __getsubject(self) -> Subjects:
         return self.__subject
 
 

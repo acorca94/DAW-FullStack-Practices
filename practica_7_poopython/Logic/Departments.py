@@ -8,10 +8,10 @@ class Departments:
         self.__identification = identification
 
     # GETTERS
-    def __getname(self):
+    def __getname(self) -> str:
         return self.__name
 
-    def __getidentification(self):
+    def __getidentification(self) -> int:
         return self.__identification
 
     #SETTERS

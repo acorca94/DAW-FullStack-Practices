@@ -1,7 +1,7 @@
 class Courses:
 
     # CONSTRUCTOR
-    def __init__(self, code: int, description: str, level: int, type: str):
+    def __init__(self, code: int, description: str, level: str, type: str):
         self.__code = code
         self.__description = description
         self.__level = level

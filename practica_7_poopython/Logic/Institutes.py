@@ -4,7 +4,7 @@ from Logic import Addresses, Courses
 class Institutes:
 
     # CONSTRUCTOR
-    def __init__(self, name: str, cif: int, address: Addresses, course: Courses):
+    def __init__(self, name: str, cif: str, address: Addresses, course: Courses):
         self.__name = name
         self.__cif = cif
         self.__address = address

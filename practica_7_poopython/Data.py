@@ -27,22 +27,21 @@ address_teacher1 = Addresses("Republica Argentina", 3, 41010, "Sevilla", "Sevill
 address_teacher2 = Addresses("Rafael Alberti", 5, 41018, "Tomares", "Sevilla")
 address_administrative1 = Addresses("Mar Caspio", 5, 41009, "Sevilla", "Sevilla")
 address_administrative2 = Addresses("Cigalas", 19, 41011, "Sevilla", "Sevilla")
+address_institute1y2 = Addresses("Astronomía", 3, 41009, "Dos Hermanas", "Sevilla")
+
 
 # CREACIÓN DE DEPARTAMENTOS
 department1 = Departments("Informática", 10)
 department2 = Departments("Logística", 12)
 
-# CREACIÓN DE ASIGNATURAS
-subject1 = Subjects()
-subject2 = Subjects()
-
-# CREACIÓN DE NOTAS
-mark1 = Marks()
-mark2 = Marks()
 
 # CREACIÓN DE CURSOS
-course1 = Courses()
-course2 = Courses()
+course1 = Courses(20, "Sistemas informáticos", "Grado Superior", "primero")
+course2 = Courses(23, "Programación", "Grado Superior", "segundo")
+
+# CREACIÓN DE INSTITUTO
+institute1 = Institutes("I.E.S Hermanos Machado", "B23344556", address_institute1y2, course1)
+institute2 = Institutes("I.E.S. Hermanos Machado", "B23344556", address_institute1y2, course2)
 
 # CREACIÓN DE ESTUDIANTES
 student1 = Students("Marta", "34003400Y", 23, "Femenino", "marta0087@gmail.con", 23, address_student1, subject1, mark1,
@@ -51,10 +50,22 @@ student2 = Students("Carlos", "47340010L", 25, "Masculino", "carlos0087@gmail.co
                     mark2,
                     course2)
 
+# CREACIÓN DE NOTAS
+mark1 = Marks(student1, subject1, 8)
+mark2 = Marks(student2, subject2, 7)
+
 # CREACIÓN DE PROFESORES
 teacher1 = Teachers("Jose Angel", "47340009P", 38, "Masculino", date_teacher1, salary_teacher1, address_teacher1, subject1,
                     department1)
 teacher2 = Teachers("Maria", "340009Y", 26, "Femenino", date_teacher2, salary_teacher2, address_teacher2, subject2, department2)
+
+# CREACIÓN DE ASIGNATURAS
+subject1 = Subjects(teacher1, 13, "S.I.", 50, "Sistemas informáticos")
+subject2 = Subjects(teacher2, 15, "Pro.", 30, "Programación")
+
+# CREACIÓN DE MATRÍCULAS
+registration1 = Registrations(student1, course1, subject1)
+registration2 = Registrations(student2, course2, subject2)
 
 # CREACIÓN DE ADMINISTRATIVOS
 administrative1 =Administrative("Julian", "34098212Y", 26, "Masculino", "Nóminas", 1300, address_administrative1, date_administrative1, )

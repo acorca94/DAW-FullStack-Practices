@@ -3,7 +3,7 @@ import Subjects
 class Marks:
 
     # CONSTRUCTOR
-    def __init__(self, student: Students, subject: Subjects, calification: int):
+    def __init__(self, student: Students, subject: Subjects, calification: float):
         self.__student = student
         self.__subject = subject
         self.__calification = calification

@@ -42,3 +42,15 @@ class Teachers(People):
 
     def __setdepartment(self, department):
         self.__department = department
+
+
+# SUELDO NETO DEL PROFESOR
+
+    def netsalary(self, salarioneto):
+        salario_base = float(input("Salario base: "))
+        retencion_irpf = float(input("Porcentaje de retención de IRPF: "))
+        retencion_seguridad_social = float(input("Porcentaje de retención de S.S.: "))
+        salarioneto = salario_base * retencion_irpf
+
+
+

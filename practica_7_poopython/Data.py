@@ -6,7 +6,6 @@ from Logic.Courses import Courses
 from Logic.Departments import Departments
 from Logic.Institutes import Institutes
 from Logic.Marks import Marks
-from Logic.People import People
 from Logic.Registrations import Registrations
 from Logic.Teachers import Teachers
 from datetime import datetime
@@ -58,7 +57,7 @@ student2 = Students("Carlos", "47340010L", 25, "Masculino", "carlos0087@gmail.co
 
 
 # CREACIÓN DE PROFESORES
-teacher1 = Teachers("Jose Angel", "47340009P", 38, "Masculino", date_teacher1, salary_teacher1,
+teacher1 = Teachers("Jose Angel", "47340009P", 38, "Masculino", date_teacher1, salary_teacher1, address_teacher1,
                     department1)
 teacher2 = Teachers("Maria", "340009Y", 26, "Femenino", date_teacher2, salary_teacher2, address_teacher2,
                     department2)
@@ -84,3 +83,5 @@ administrative1 = Administrative("Julian", "34098212Y", 26, "Masculino", "Nómin
                                  date_administrative1, )
 administrative2 = Administrative("Carla", "34000823G", 30, "Femenino", "Papeles en general", 1300,
                                  address_administrative2, date_administrative2)
+
+print(f"Salario neto: {teacher1.netsalary()}")

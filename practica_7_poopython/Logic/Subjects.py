@@ -1,4 +1,4 @@
-from Logic import Teachers
+from Logic.Teachers import Teachers
 
 
 class Subjects:
@@ -27,8 +27,7 @@ class Subjects:
     def __getdescription(self) -> str:
         return self.__description
 
-
-    #SETTERS
+    # SETTERS
     def __setteacher(self, teachear):
         self.__teacher = teachear
 

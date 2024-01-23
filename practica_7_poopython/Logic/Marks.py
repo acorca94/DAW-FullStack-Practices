@@ -1,5 +1,7 @@
-import Students
-import Subjects
+from Logic.Students import Students
+from Logic.Subjects import Subjects
+
+
 class Marks:
 
     # CONSTRUCTOR

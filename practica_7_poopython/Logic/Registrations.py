@@ -1,5 +1,6 @@
-import Students
-from Logic import Students, Courses, Subjects
+from Logic.Students import Students
+from Logic.Courses import Courses
+from Logic.Subjects import Subjects
 
 
 #CLASE ADMINISTRATIVE HEREDANDO DE PEOPLE

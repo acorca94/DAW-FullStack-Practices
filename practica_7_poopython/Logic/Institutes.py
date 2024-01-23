@@ -1,4 +1,5 @@
-from Logic import Addresses, Courses
+from Logic.Addresses import Addresses
+from Logic.Courses import Courses
 
 
 class Institutes:

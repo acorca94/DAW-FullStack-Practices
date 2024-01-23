@@ -1,5 +1,6 @@
 # CLASE PERSONA
-from Logic import Addresses, Departments, Subjects
+from Logic.Addresses import Addresses
+from Logic.Departments import Departments
 from Logic.People import People
 from datetime import datetime
 
@@ -44,13 +45,8 @@ class Teachers(People):
         self.__department = department
 
 
-# SUELDO NETO DEL PROFESOR
-
-    def netsalary(self, salarioneto):
-        salario_base = float(input("Salario base: "))
-        retencion_irpf = float(input("Porcentaje de retención de IRPF: "))
-        retencion_seguridad_social = float(input("Porcentaje de retención de S.S.: "))
-        salarioneto = salario_base * retencion_irpf
-
-
+    # SUELDO NETO DEL PROFESOR
+    def netsalary(self):
+        net_salary = self.__salary - (self.__salary*0.20)
+        return net_salary
 

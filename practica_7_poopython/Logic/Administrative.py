@@ -1,6 +1,6 @@
-from Logic import Addresses
+from Logic.Addresses import Addresses
 import datetime
-from People import People
+from Logic.People import People
 
 
 #CLASE ADMINISTRATIVE HEREDANDO DE PEOPLE
@@ -41,3 +41,9 @@ class Administrative(People):
 
     def __setstart_date(self, start_date):
         self.__start_date = start_date
+
+
+    # SUELDO NETO DEL ADMINISTRATIVO
+    def netsalary(self):
+        net_salary = self.__salary - (self.__salary * 0.15)
+        return net_salary

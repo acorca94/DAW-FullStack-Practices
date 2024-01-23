@@ -18,7 +18,7 @@ date_administrative2 = datetime(2020, 8, 5)
 
 
 # SALARIO DE PROFESORES Y ADMINISTRATIVOS
-salary_teacher1 = 1800
+salary_teacher1 = 2000
 salary_teacher2 = 1600
 salary_administrative1 = 1300
 salary_administrative2 = 1300

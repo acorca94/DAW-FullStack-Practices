@@ -1,5 +1,5 @@
+from datetime import datetime
 from Logic.Addresses import Addresses
-import datetime
 from Logic.People import People
 
 
@@ -47,3 +47,9 @@ class Administrative(People):
     def netsalary(self):
         net_salary = self.__salary - (self.__salary*0.15)
         return net_salary
+
+    #ANTIGÜEDAD DE TRABAJO DEL ADMINISTRATIVO
+    def year_old(self):
+        today = datetime.today().year
+        old = today - self.__start_date.year
+        return old

@@ -11,8 +11,8 @@ from Logic.Teachers import Teachers
 from datetime import datetime
 
 # FECHA DE INICIO DE CONTRATO DE PROFESORES Y ADMINISTRATIVOS
-date_teacher1 = datetime(2020, 9, 1)
-date_teacher2 = datetime(2020, 9, 7)
+date_teacher1 = datetime(2020, 1, 1)
+date_teacher2 = datetime(2021, 1, 1)
 date_administrative1 = datetime(2021, 10, 5)
 date_administrative2 = datetime(2020, 8, 5)
 

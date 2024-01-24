@@ -1,8 +1,8 @@
-#from Logic.Students import Students
-#from Logic.Addresses import Addresses
-#from Logic.Subjects import Subjects
-#from Logic.Administrative import Administrative
-#from Logic.Courses import Courses
+from Logic.Students import Students
+from Logic.Addresses import Addresses
+from Logic.Subjects import Subjects
+from Logic.Administrative import Administrative
+from Logic.Courses import Courses
 from Logic.Departments import Departments
 from Logic.Institutes import Institutes
 from Logic.Marks import Marks
@@ -13,40 +13,16 @@ import Data
 
 #MENÚ DEL PROYECTO
 print("¡Hola! Bienvenido al menú. Estas son las opciones:")
-print("1. Ver boletín de notas")
-print("2. Añadir alumno")
-print("3. Añadir profesor")
-print("4. Registro de matrícula")
-print("5. Modificar datos de matrícula.")
-print("6. Asignaturas disponibles")
-print("7. Personal administrativo")
-print("8. Ver salario neto de profesor o administrativo")
+print("1. Ver salario neto de profesores y/o administrativos")
+print("2. Ver antigüedad de profesores y/o administrativos")
+print("3. Listado de asignaturas matriculadas del alumno")
+print("4. Ver boletín de notas")
+print("5. Crear información nueva")
 
 select = int(input("Introduce el número de la función a la que quieres acceder: "))
 
 if select == 1:
-    print("1. Aquí tienes tu boletín de notas: ")
-
-elif select == 2:
-    print("Añade tus datos de alumno:")
-
-elif select == 3:
-    print("Añade tus datos de profesor:")
-
-elif select == 4:
-    print("Registro de matrícula:")
-
-elif select == 5:
-    print("Modifica tus datos de matriculación:")
-
-elif select == 6:
-    print("Lista de asignaturas:")
-
-elif select == 7:
-    print("Personal administrativo:")
-
-elif select == 8:
-    print("Selecciona el sueldo neto que quieres ver: ")
+    print("Selecciona de quien quieres ver el sueldo neto: ")
     print("Profesor 1")
     print("Profesor 2")
     print("Administrativo 1")
@@ -55,10 +31,48 @@ elif select == 8:
     select_8 = str(input("Escribe aquí de quien quieres ver el sueldo: "))
 
     if select_8 == "Profesor 1":
-        print("Aquí tienes tu sueldo neto: ", Data.teacher1.netsalary())
+        print("Aquí tienes tu sueldo neto: ", Data.teacher1.netsalary(), "€")
     elif select_8 == "Profesor 2":
-        print("Aquí tienes tu sueldo neto: ", Data.teacher2.netsalary())
+        print("Aquí tienes tu sueldo neto: ", Data.teacher2.netsalary(), "€")
     elif select_8 == "Administrativo 1":
-        print("Aquí tienes tu sueldo neto: ", Data.administrative1.netsalary())
+        print("Aquí tienes tu sueldo neto: ", Data.administrative1.netsalary(), "€")
     elif select_8 == "Administrativo 2":
-        print("Aquí tienes tu sueldo neto: ", Data.administrative2.netsalary())
+        print("Aquí tienes tu sueldo neto: ", Data.administrative2.netsalary(), "€")
+
+elif select == 2:
+    print("Selecciona de quien quieres la antigüedad: ")
+    print("Profesor 1")
+    print("Profesor 2")
+    print("Administrativo 1")
+    print("Administrativo 2")
+    select_teacher = str(input("Escribe aquí el profesor: "))
+    if select_teacher == "Profesor 1":
+        print("La antigüedad en años del profesor es: ", Data.teacher1.year_old(), "año(s)")
+
+    elif select_teacher == "Profesor 2":
+        print("La antigüedad en años del profesor es: ", Data.teacher2.year_old(), "año(s)")
+
+    elif select_teacher == "Administrativo 1":
+        print("La antigüedad en años del administrativo 1 es: ", Data.administrative1.year_old(), "año(s)")
+
+    elif select_teacher == "Administrativo 2":
+        print("La antigüedad en años del administrativo 2 es: ", Data.administrative2.year_old(), "año(s)")
+
+elif select == 3:
+    print("Aquí tienes la(s) asignatura(s) en la(s) que estas matriculado: ", )
+
+elif select == 4:
+    print("Aquí tienes tu boletín de notas: ", )
+
+elif select == 5:
+    print("1. Crear alumno(s) nuevo(s): ")
+    print("2. Crear profesor(s) nuevo(s): ")
+    print("3. Crear administrativo(s) nuevo(s): ")
+
+    select_new = int(input("Escribe aquí el número al que quieres acceder: "))
+
+    if select_new == 1:
+        print("Creación de alumno: ")
+
+    elif select_new == 2:
+        print("")

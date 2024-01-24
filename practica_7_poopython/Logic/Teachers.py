@@ -1,8 +1,9 @@
 # CLASE PERSONA
+from datetime import datetime
 from Logic.Addresses import Addresses
 from Logic.Departments import Departments
 from Logic.People import People
-from datetime import datetime
+
 
 
 # CLASE TEACHERS HEREDANDO DE PEOPLE
@@ -50,3 +51,8 @@ class Teachers(People):
         net_salary = self.__salary - (self.__salary*0.20)
         return net_salary
 
+    #ANTIGÜEDAD DE TRABAJO DEL PROFESOR
+    def year_old(self):
+        today = datetime.today().year
+        old = today - self.__start_date.year
+        return old

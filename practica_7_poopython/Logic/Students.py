@@ -14,30 +14,41 @@ class Students(People):
         self.__identification = identification
         self.__address = address
         self.__course = course
+        self.__subject = []
 
     # GETTERS
-    def __getemail(self) -> str:
+    def getemail(self) -> str:
         return self.__email
 
-    def __getidentification(self) -> int:
+    def getidentification(self) -> int:
         return self.__identification
 
-    def __getaddress(self) -> Addresses:
+    def getaddress(self) -> Addresses:
         return self.__address
 
-    def __getcourse(self) -> Courses:
+    def getcourse(self) -> Courses:
         return self.__course
 
+    def getsubject(self):
+        return self.__subject
+
+    # AÑADIR ASIGNATURAS AL ALUMNO
+    def add_subject(self, subject):
+        self.__subject.append(subject)
 
     # SETTERS
-    def __setemail(self, email):
+    def setemail(self, email):
         self.__email = email
 
-    def __setidentification(self, identification):
+    def setidentification(self, identification):
         self.__identification = identification
 
-    def __setaddress(self, address):
+    def setaddress(self, address):
         self.__address = address
 
-    def __setcourse(self, course):
+    def setcourse(self, course):
         self.__course = course
+
+    def setsubject(self, subject):
+        self.__subject = subject
+

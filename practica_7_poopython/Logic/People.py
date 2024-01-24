@@ -9,28 +9,28 @@ class People:
         self.__gender = gender
 
     #GETTERS
-    def __getname(self) -> str:
+    def getname(self) -> str:
         return self.__name
 
-    def __getdni(self) -> str:
+    def getdni(self) -> str:
         return self.__dni
 
-    def __getage(self) -> int:
+    def getage(self) -> int:
         return self.__age
 
-    def __getgender(self) -> str:
+    def getgender(self) -> str:
         return self.__gender
 
     #SETTERS
-    def __setname(self, name):
+    def setname(self, name):
         self.__name = name
 
-    def __setdni(self, dni):
+    def setdni(self, dni):
         self.__dni = dni
 
-    def __setage(self, age):
+    def setage(self, age):
         self.__age = age
 
-    def __setgender(self, gender):
+    def setgender(self, gender):
         self.__gender = gender
 

@@ -12,33 +12,33 @@ class Subjects:
         self.__description = description
 
     # GETTERS
-    def __getteacher(self) -> Teachers:
+    def getteacher(self) -> Teachers:
         return self.__teacher
 
-    def __getidentification(self) -> int:
+    def getidentification(self) -> int:
         return self.__identification
 
-    def __getname(self) -> str:
+    def getname(self) -> str:
         return self.__name
 
-    def __getcredit(self) -> int:
+    def getcredit(self) -> int:
         return self.__credit
 
-    def __getdescription(self) -> str:
+    def getdescription(self) -> str:
         return self.__description
 
     # SETTERS
-    def __setteacher(self, teachear):
+    def setteacher(self, teachear):
         self.__teacher = teachear
 
-    def __setidentification(self, identification):
+    def setidentification(self, identification):
         self.__identification = identification
 
-    def __setname(self, name):
+    def setname(self, name):
         self.__name = name
 
-    def __setcredit(self, credit):
+    def setcredit(self, credit):
         self.__credit = credit
 
-    def __setdescription(self, description):
+    def setdescription(self, description):
         self.__description = description

@@ -8,28 +8,28 @@ class Courses:
         self.__type = type
 
     # GETTERS
-    def __getcode(self) -> int:
+    def getcode(self) -> int:
         return self.__code
 
-    def __getdescription(self) -> str:
+    def getdescription(self) -> str:
         return self.__description
 
-    def __getlevel(self) -> str:
+    def getlevel(self) -> str:
         return self.__level
 
-    def __gettype(self) -> str:
+    def gettype(self) -> str:
         return self.__type
 
 
     #SETTERS
-    def __setcode(self, code):
+    def setcode(self, code):
         self.__code = code
 
-    def __setdescription(self, description):
+    def setdescription(self, description):
         self.__description = description
 
-    def __setlevel(self, level):
+    def setlevel(self, level):
         self.__level = level
 
-    def __settype(self, type):
+    def settype(self, type):
         self.__type = type

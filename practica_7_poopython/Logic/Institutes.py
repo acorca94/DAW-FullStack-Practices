@@ -14,28 +14,28 @@ class Institutes:
         
 
     # GETTERS
-    def __getname(self) -> str:
+    def getname(self) -> str:
         return self.__name
 
-    def __getcif(self) -> str:
+    def getcif(self) -> str:
         return self.__cif
 
-    def __getaddress(self) -> Addresses:
+    def getaddress(self) -> Addresses:
         return self.__address
 
-    def __getcourse(self) -> Courses:
+    def getcourse(self) -> Courses:
         return self.__course
 
 
     #SETTERS
-    def __setname(self, name):
+    def setname(self, name):
         self.__name = name
 
-    def __setcif(self, cif):
+    def setcif(self, cif):
         self.__cif = cif
 
-    def __setaddress(self, address):
+    def setaddress(self, address):
         self.__address = address
 
-    def __setcourse(self, course):
+    def setcourse(self, course):
         self.__course = course

@@ -19,30 +19,30 @@ class Teachers(People):
         self.__department = department
 
     # GETTERS
-    def __getstart_date(self) -> datetime:
+    def getstart_date(self) -> datetime:
         return self.__start_date
 
-    def __getsalary(self) -> float:
+    def getsalary(self) -> float:
         return self.__salary
 
-    def __getaddress(self) -> Addresses:
+    def getaddress(self) -> Addresses:
         return self.__address
 
-    def __getdepartment(self) -> Departments:
+    def getdepartment(self) -> Departments:
         return self.__department
 
 
     # SETTERS
-    def __setstart_date(self, start_date):
+    def setstart_date(self, start_date):
         self.__start_date = start_date
 
-    def __setsalary(self, salary):
+    def setsalary(self, salary):
         self.__salary = salary
 
-    def __setaddress(self, address):
+    def setaddress(self, address):
         self.__address = address
 
-    def __setdepartment(self, department):
+    def setdepartment(self, department):
         self.__department = department
 
 

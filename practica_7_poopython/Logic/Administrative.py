@@ -45,5 +45,5 @@ class Administrative(People):
 
     # SUELDO NETO DEL ADMINISTRATIVO
     def netsalary(self):
-        net_salary = self.__salary - (self.__salary * 0.15)
+        net_salary = self.__salary - (self.__salary*0.15)
         return net_salary

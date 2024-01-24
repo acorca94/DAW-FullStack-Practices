@@ -79,9 +79,7 @@ registration2 = Registrations(student2, course2, subject2)
 
 
 # CREACIÓN DE ADMINISTRATIVOS
-administrative1 = Administrative("Julian", "34098212Y", 26, "Masculino", "Nóminas", 1300, address_administrative1,
+administrative1 = Administrative("Julian", "34098212Y", 26, "Masculino", "Nóminas", salary_administrative1, address_administrative1,
                                  date_administrative1, )
-administrative2 = Administrative("Carla", "34000823G", 30, "Femenino", "Papeles en general", 1300,
+administrative2 = Administrative("Carla", "34000823G", 30, "Femenino", "Papeles en general", salary_administrative2,
                                  address_administrative2, date_administrative2)
-
-print(f"Salario neto: {teacher1.netsalary()}")

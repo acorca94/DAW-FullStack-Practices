@@ -54,6 +54,8 @@ teacher2 = Teachers("Maria", "340009Y", 26, "Femenino", date_teacher2, salary_te
 # CREACIÓN DE ASIGNATURAS
 subject1 = Subjects(teacher1, 13, "S.I.", 50, "Sistemas informáticos")
 subject2 = Subjects(teacher2, 15, "Pro.", 30, "Programación")
+subject3 = Subjects(teacher1, 10, "L.M.", 20, "Lenguaje de Marcas")
+subject4 = Subjects(teacher2, 9, "FOL", 35, "Formación y Orientación Laboral")
 
 
 # CREACIÓN DE ESTUDIANTES
@@ -61,12 +63,13 @@ student1 = Students("Marta", "34003400Y", 23, "Femenino", "marta0087@gmail.con",
                     course1)
 student1.add_subject(subject1)
 student1.add_subject(subject2)
+student1.add_subject(subject3)
 
 student2 = Students("Carlos", "47340010L", 25, "Masculino", "carlos0087@gmail.con", 15, address_student2,
                     course2)
 student2.add_subject(subject1)
 student2.add_subject(subject2)
-
+student2.add_subject(subject4)
 # CREACIÓN DE NOTAS
 mark1 = Marks(student1, subject1, 8)
 mark2 = Marks(student2, subject2, 7)

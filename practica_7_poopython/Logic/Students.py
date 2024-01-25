@@ -6,6 +6,7 @@ from Logic.Courses import Courses
 # CLASE STUDENTS HEREDANDO DE PEOPLE
 class Students(People):
 
+
     # CONSTRUCTOR
     def __init__(self, name: str, dni: str, age: int, gender: str, email: str, identification: int,
                  address: Addresses, course: Courses):
@@ -15,6 +16,8 @@ class Students(People):
         self.__address = address
         self.__course = course
         self.__subject = []
+        self.__mark = []
+
 
     # GETTERS
     def getemail(self) -> str:
@@ -32,9 +35,19 @@ class Students(People):
     def getsubject(self):
         return self.__subject
 
+    def getmark(self):
+        return self.__mark
+
+
     # AÑADIR ASIGNATURAS AL ALUMNO
     def add_subject(self, subject):
         self.__subject.append(subject)
+
+
+    # AÑADIR NOTAS AL ALUMNO
+    def add_mark(self, mark):
+        self.__mark.append(mark)
+
 
     # SETTERS
     def setemail(self, email):
@@ -52,3 +65,5 @@ class Students(People):
     def setsubject(self, subject):
         self.__subject = subject
 
+    def setmark(self, mark):
+        self.__mark = mark

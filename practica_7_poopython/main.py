@@ -1,3 +1,3 @@
-from Presentation import start_program
+from Presentation import Presentation
 
-start_program()
+Presentation.start_program()

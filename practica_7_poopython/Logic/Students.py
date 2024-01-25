@@ -39,16 +39,6 @@ class Students(People):
         return self.__mark
 
 
-    # AÑADIR ASIGNATURAS AL ALUMNO
-    def add_subject(self, subject):
-        self.__subject.append(subject)
-
-
-    # AÑADIR NOTAS AL ALUMNO
-    def add_mark(self, mark):
-        self.__mark.append(mark)
-
-
     # SETTERS
     def setemail(self, email):
         self.__email = email
@@ -67,3 +57,28 @@ class Students(People):
 
     def setmark(self, mark):
         self.__mark = mark
+
+
+    # AÑADIR ASIGNATURAS AL ALUMNO
+    def add_subject(self, subject):
+        self.__subject.append(subject)
+
+
+    # AÑADIR NOTAS AL ALUMNO
+    def add_mark(self, mark):
+        self.__mark.append(mark)
+
+
+    # CREAR NUEVO ESTUDIANTE
+    def new_student(self):
+        self.__name = str(input("Nombre: "))
+        self.__dni = str(input("DNI: "))
+        self.__age = int(input("Edad: "))
+        self.__gender = str(input("Sexo: "))
+        self.__email = str(input("EMAIL: "))
+        self.__ID = int(input("ID de alumno: "))
+        self.__address = str(input("Dirección: "))
+        self.__course = str(input("Curso: "))
+
+        print("Aquí tienes tus datos de registro: \n", "Nombre --> ", self.__name, "\n", "DNI --> ", self.__dni, "\n", "EDAD --> ", self.__age, "\n", "SEXO --> ", self.__gender, "\n", "EMAIL --> ", self.__email, "\n", "ID DE ALUMNO --> ",  self.__ID, "\n", "DIRECCIÓN --> ", self.__address, "\n", "CURSO --> ", self.__course)
+

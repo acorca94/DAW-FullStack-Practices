@@ -56,3 +56,20 @@ class Teachers(People):
         today = datetime.today().year
         old = today - self.__start_date.year
         return old
+
+    # CREAR UN NUEVO PROFESOR
+    def new_teacher(self):
+        self.setname(str(input("Nombre: ")))
+        self.setdni(str(input("DNI: ")))
+        self.setage(int(input("Edad: ")))
+        self.setgender(str(input("Sexo: ")))
+        self.setstart_date(str(input("Fecha de inicio de contrato: ")))
+        self.setsalary(float(input("Salario: ")))
+        self.setaddress(str(input("Dirección: ")))
+        self.setdepartment(str(input("Departamento: ")))
+
+        print("Aquí tienes tus datos de registro: \n", "Nombre --> ", self.getname(), "\n", "DNI --> ", self.getdni(),
+              "\n", "EDAD --> ", self.getage(), "\n", "SEXO --> ", self.getgender(), "\n", "FECHA DE INICIO DE CONTRATO --> ",
+              self.getstart_date(), "\n", "SALARIO --> ", self.getsalary(), "\n", "DIRECCIÓN --> ",
+              self.getaddress(), "\n", "DEPARTAMENTO --> ", self.getdepartment(), "\n")
+

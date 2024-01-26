@@ -6,7 +6,6 @@ from Logic.Courses import Courses
 # CLASE STUDENTS HEREDANDO DE PEOPLE
 class Students(People):
 
-
     # CONSTRUCTOR
     def __init__(self, name: str, dni: str, age: int, gender: str, email: str, identification: int,
                  address: Addresses, course: Courses):
@@ -17,7 +16,6 @@ class Students(People):
         self.__course = course
         self.__subject = []
         self.__mark = []
-
 
     # GETTERS
     def getemail(self) -> str:
@@ -38,7 +36,6 @@ class Students(People):
     def getmark(self):
         return self.__mark
 
-
     # SETTERS
     def setemail(self, email):
         self.__email = email
@@ -58,27 +55,26 @@ class Students(People):
     def setmark(self, mark):
         self.__mark = mark
 
-
     # AÑADIR ASIGNATURAS AL ALUMNO
     def add_subject(self, subject):
         self.__subject.append(subject)
-
 
     # AÑADIR NOTAS AL ALUMNO
     def add_mark(self, mark):
         self.__mark.append(mark)
 
-
     # CREAR NUEVO ESTUDIANTE
     def new_student(self):
-        self.__name = str(input("Nombre: "))
-        self.__dni = str(input("DNI: "))
-        self.__age = int(input("Edad: "))
-        self.__gender = str(input("Sexo: "))
-        self.__email = str(input("EMAIL: "))
-        self.__ID = int(input("ID de alumno: "))
-        self.__address = str(input("Dirección: "))
-        self.__course = str(input("Curso: "))
+        self.setname(str(input("Nombre: ")))
+        self.setdni(str(input("DNI: ")))
+        self.setage(int(input("Edad: ")))
+        self.setgender(str(input("Sexo: ")))
+        self.setemail(str(input("EMAIL: ")))
+        self.setidentification(int(input("ID de alumno: ")))
+        self.setaddress(str(input("Dirección: ")))
+        self.setcourse(str(input("Curso: ")))
 
-        print("Aquí tienes tus datos de registro: \n", "Nombre --> ", self.__name, "\n", "DNI --> ", self.__dni, "\n", "EDAD --> ", self.__age, "\n", "SEXO --> ", self.__gender, "\n", "EMAIL --> ", self.__email, "\n", "ID DE ALUMNO --> ",  self.__ID, "\n", "DIRECCIÓN --> ", self.__address, "\n", "CURSO --> ", self.__course)
-
+        print("Aquí tienes tus datos de registro: \n", "Nombre --> ", self.getname(), "\n", "DNI --> ", self.getdni(),
+              "\n", "EDAD --> ", self.getage(), "\n", "SEXO --> ", self.getgender(), "\n", "EMAIL --> ",
+              self.getemail(), "\n", "ID DE ALUMNO --> ", self.getidentification(), "\n", "DIRECCIÓN --> ",
+              self.getaddress(), "\n", "CURSO --> ", self.getcourse(), "\n")

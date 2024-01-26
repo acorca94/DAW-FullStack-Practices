@@ -1,10 +1,11 @@
 import Data
-from Logic.Students import Students
+
 
 class Presentation:
     @staticmethod
     def start_program():
 
+        # Creo un while para que se me repita lo mismo hasta el punto 6 que yo le digo break para que pare en ese punto y no vuelva a mostrar el menú de nuevo
         while True:
             # MENÚ DEL PROYECTO
             print("¡Hola! Bienvenido(s) al menú. Seleccione el número de la opción a la que quieres acceder: \n")
@@ -12,7 +13,8 @@ class Presentation:
             print("2. Ver antigüedad de profesores y/o administrativos")
             print("3. Listado de asignaturas matriculadas del alumno")
             print("4. Ver boletín de notas")
-            print("5. Crear información nueva \n")
+            print("5. Crear información nueva")
+            print("6. Salir \n")
 
             select = int(input("Introduce el número de la función a la que quieres acceder: \n"))
 
@@ -36,7 +38,7 @@ class Presentation:
                           Data.administrative1.netsalary(), "€")
                 elif select_8 == "Administrativo 2":
                     print("Aquí tienes tu sueldo neto: ", Data.administrative2.getname(), " --> ",
-                          Data.administrative2.netsalary(), "€")
+                          (), "€")
                 else:
                     print("Selección incorrecta")
 
@@ -115,14 +117,20 @@ class Presentation:
                     print("Creación de alumno nuevo: ")
                     Data.create_student.new_student()
 
-
                 elif select_new == 2:
                     print("Creación de profesor nuevo: ")
+                    Data.create_teacher.new_teacher()
 
                 elif select_new == 3:
                     print("Creación de administrativo nuevo: ")
+                    Data.create_administrative.new_administrative()
+
                 else:
                     print("Selección incorrecta")
-                    break
+
+            elif select == 6:
+                print("Has salido con éxito. Gracias.")
+                break
+
             else:
                 print("Los datos a los que quieres acceder, no están disponibles. Inténtalo de nuevo.")

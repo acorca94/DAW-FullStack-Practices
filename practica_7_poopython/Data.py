@@ -67,6 +67,7 @@ subject4 = Subjects(teacher2, 9, "FOL", 35, "Formación y Orientación Laboral")
 # CREACIÓN DE ESTUDIANTES
 student1 = Students("Marta", "34003400Y", 23, "Femenino", "marta0087@gmail.con", 23, address_student1,
                     course1)
+# AQUÍ LE ESTTOY DICIENDO QUE EL ESTUDIANTE UNO SE LE AÑADE UNA ASIGNATURA Y DENTRO DE PARENTESIS LE AÑADO LAS ASIGNATURAS QUE QUIERO QUE TENGA. EN ESTE CASO TIENE TRES
 student1.add_subject(subject1)
 student1.add_subject(subject2)
 student1.add_subject(subject3)
@@ -76,10 +77,6 @@ student2 = Students("Carlos", "47340010L", 25, "Masculino", "carlos0087@gmail.co
 student2.add_subject(subject1)
 student2.add_subject(subject2)
 student2.add_subject(subject4)
-
-new_address = Addresses(" ", 0, 0, " ", " ")
-new_course = Courses(0, " ", " ", " ")
-create_student = Students(" ", " ", 0, " ", " ", 0, new_address, new_course)
 
 
 # CREACIÓN DE NOTAS
@@ -104,3 +101,13 @@ administrative1 = Administrative("Julian", "34098212Y", 26, "Masculino", "Nómin
                                  date_administrative1, )
 administrative2 = Administrative("Carla", "34000823G", 30, "Femenino", "Papeles en general", salary_administrative2,
                                  address_administrative2, date_administrative2)
+
+# CREACIÓN DE NUEVOS USUARIOS
+new_salary = 0
+new_date = datetime(2000, 1, 1)
+new_address = Addresses(" ", 0, 0, " ", " ")
+new_course = Courses(0, " ", " ", " ")
+new_department = Departments(" ", 0)
+create_administrative = Administrative(" ", " ", 0, " ", " ", new_salary, new_address, new_date)
+create_student = Students(" ", " ", 0, " ", " ", 0, new_address, new_course)
+create_teacher = Teachers(" ", " ", 0, " ", new_date, new_salary, new_address, new_department)

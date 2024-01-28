@@ -55,13 +55,16 @@ class Students(People):
     def setmark(self, mark):
         self.__mark = mark
 
+
     # AÑADIR ASIGNATURAS AL ALUMNO
     def add_subject(self, subject):
         self.__subject.append(subject)
 
+
     # AÑADIR NOTAS AL ALUMNO
     def add_mark(self, mark):
         self.__mark.append(mark)
+
 
     # CREAR NUEVO ESTUDIANTE
     def new_student(self):

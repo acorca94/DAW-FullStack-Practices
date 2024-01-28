@@ -74,14 +74,14 @@ class Presentation:
                 if subject_select == 1:
                     print("Aquí tienes la(s) asignatura(s) del/la estudiante: ", Data.student1.getname(), "con DNI: ",
                           Data.student1.getdni())
-                    # Para cada asignatura en la lista de asignaturas del estudiante1 (getsubject) q
+                    # Para cada asignatura en la lista de asignaturas del estudiante1 (getsubject)
                     for subject in Data.student1.getsubject():
                         # Imprime el nombre de cada asignatura que tengo dentro esa lista
                         print(subject.getname())
                 elif subject_select == 2:
                     print("Aquí tienes la(s) asignatura(s) del/la estudiante: ", Data.student2.getname(), " con DNI: ",
                           Data.student2.getdni())
-                    # Para cada asignatura en la lista de asignaturas del estudiante1 (getsubject) q
+                    # Para cada asignatura en la lista de asignaturas del estudiante2 (getsubject)
                     for subject in Data.student2.getsubject():
                         # Imprime el nombre de cada asignatura que tengo dentro esa lista
                         print(subject.getname())

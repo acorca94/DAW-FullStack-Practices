@@ -1,4 +1,3 @@
-# CLASE PERSONA
 from datetime import datetime
 from Logic.Addresses import Addresses
 from Logic.Departments import Departments

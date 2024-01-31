@@ -22,3 +22,4 @@ public class GestorEmpleados {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+}

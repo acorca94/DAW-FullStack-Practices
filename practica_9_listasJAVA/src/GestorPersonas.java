@@ -1,30 +1,40 @@
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 
 public class GestorPersonas {
 
-    private String name;
-    private Integer age;
+    private Map<String, Integer> map;
 
-    public GestorPersonas(String name, Integer age) {
-        this.name = name;
-        this.age = age;
+    //CONSTRUCTOR
+    public GestorPersonas() {
+
+        this.map = new HashMap<>(Map.of("Antonio", 29));
     }
 
-    public String getName() {
-        return name;
+    //GETTER
+    public Map<String, Integer> getMap() {
+        return this.map;
     }
 
-    public Integer getAge() {
-        return age;
+
+    //AGREGAR PERSONA CON MAP (HASHMAP)
+    public void agregarPersona(String nombre, Integer edad) {
+        this.map.put(nombre, edad);
     }
 
-    public void setName(String name) {
-        this.name = name;
+    //MOSTRAR PERSONA CON MAP(HASHMAP)
+    public void mostrarPersona(String nombre) {
+        Integer edad = this.map.get(nombre);
+        System.out.println("Nombre: " + nombre + "\n" +
+                "Edad: " + edad);
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void existePersona(String nombre) {
+        if (map.containsKey(nombre)) {
+            System.out.println(nombre + " está en la lista.");
+        }
+        else {
+            System.out.println(nombre + " no está en la lista");
+        }
     }
 }

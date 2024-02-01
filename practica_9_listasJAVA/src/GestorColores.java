@@ -1,16 +1,44 @@
+import java.util.Set;
+import java.util.HashSet;
+
 public class GestorColores {
 
-    private String color_set;
+    //ATRIBUTO DE GESTORCOLORES
+    private Set<String> colors;
 
-    public GestorColores(String color_set) {
-        this.color_set = color_set;
+
+    //CONSTRUCTOR DE GESTORCOLORES
+    public GestorColores() {
+        this.colors = new HashSet<>();
     }
 
-    public String getColor_set() {
-        return color_set;
+
+    //GETTER DE GESTOR COLORES
+    public Set<String> getColors() {
+        return this.colors;
     }
 
-    public void setColor_set(String color_set) {
-        this.color_set = color_set;
+
+    //AGREGAR COLOR CON SET (HASHSET)
+    public void agregarColor(String nombre) {
+        this.colors.add(nombre);
     }
+
+
+    //MOSTRAR COLOR CON SET(HASHSET)
+    public void mostrarColor() {
+        System.out.println("Aquí tienes tus colores: " + colors);
+    }
+
+
+    //VERIFICAR SI EXISTE EL COLOR2 EN LA LISTA
+    public void existeColor(String nombre) {
+        if (colors.contains(nombre)) {
+            System.out.println(nombre + " está en la lista.");
+        }
+        else {
+            System.out.println(nombre + " no está en la lista");
+        }
+    }
+
 }

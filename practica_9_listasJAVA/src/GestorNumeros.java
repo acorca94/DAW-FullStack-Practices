@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 //CLASE GESTORNUMEROS:
 public class GestorNumeros {
 

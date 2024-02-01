@@ -11,6 +11,8 @@ public class Main {
         //OBJETOS EJERCICIO 4.
         GestorEstudiantes gE1 = new GestorEstudiantes();
         Estudiantes student2 = new Estudiantes("Maria", 2);
+        //OBJETOS EJERCICIO 5.
+        GestorEmpleados gEE1 = new GestorEmpleados();
 
         //CREACIÓN DEL MENÚ con el system.out.println
         System.out.println("Bienvenido al menú. Estas son las opciones: ");
@@ -49,8 +51,6 @@ public class Main {
 
             //Verifica si existe una persona en la lista con la Key
             gP1.existePersona("Carlos");
-
-
         }
         else if (option == 3) {
             //Sirve para agregar colores con SET (HASHSET)
@@ -83,7 +83,17 @@ public class Main {
             //Sirve para verificar si un estudiante, esta en la lista
             gE1.existeEstudiante(5);
 
-        } else if (option == 5) {
+        }
+        else if (option == 5) {
+            //AGREGAR NÚMEROS A MI LISTA. EL METODO ESTÁ EN CLASE GestorNumeros
+            gEE1.agregarEmpleado("Marcos", 1236.);
+            gEE1.agregarEmpleado("Julia", 1200.);
+
+            //MOSTRAR NÚMEROS DE MI LISTA. EL MÉTODO ESTÁ EN CLASE GestorNumeros
+            gEE1.mostrarEmpleado("Julia");
+
+            //VER SUMA TOTAL DE LOS NÚMEROS DE MI LISTA. EL MÉTODO ESTÁ EN CLASE GestorNumeros
+            gEE1.existeEmpleado("Julia");
 
         }
         else {

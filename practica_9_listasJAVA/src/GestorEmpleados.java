@@ -1,25 +1,38 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class GestorEmpleados {
-    private String name;
-    private double salary;
+    private Map<String, Double> mapa;
 
-    public GestorEmpleados(String name, double salary) {
-        this.name = name;
-        this.salary = salary;
+    //CONSTRUCTOR
+    public GestorEmpleados() {
+        this.mapa = new HashMap<>();
     }
 
-    public String getName() {
-        return name;
+    //GETTER
+    public Map<String, Double> getMapa() {
+        return this.mapa;
     }
 
-    public void setName(String name) {
-        this.name = name;
+
+    //AGREGAR PERSONA CON MAP (HASHMAP)
+    public void agregarEmpleado(String name, Double salary) {
+        this.mapa.put(name, salary);
     }
 
-    public double getSalary() {
-        return salary;
+    //MOSTRAR PERSONA CON MAP(HASHMAP)
+    public void mostrarEmpleado(String nombre) {
+        Double salary = this.mapa.get(nombre);
+        System.out.println("Nombre: " + nombre + "\n" +
+                "Salario: " + salary);
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
+    public void existeEmpleado(String nombre) {
+        if (mapa.containsKey(nombre)) {
+            System.out.println(nombre + " está en la lista.");
+        }
+        else {
+            System.out.println(nombre + " no está en la lista");
+        }
     }
 }

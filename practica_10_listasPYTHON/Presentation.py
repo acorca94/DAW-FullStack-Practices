@@ -139,7 +139,7 @@ elif option == 5:
     print("3. Mostar lista de valores")
     option = int(input("Escribe el número del ejercicio: \n"))
     if option == 1:
-        # AGREGAR ELEMENTOS A UNA LISTA:
+        # AGREGAR ELEMENTOS A UNA LISTA
         lista_1 = GestorMixto()
         lista_1.addMixto1(2)
         lista_1.addMixto1(4)

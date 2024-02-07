@@ -27,6 +27,7 @@ class Presentation:
 
                 select_8 = str(input("Escribe aquí de quien quieres ver el sueldo: \n"))
 
+
                 if select_8 == "Profesor 1":
                     print("Aquí tienes tu sueldo neto: ", Data.teacher1.getname(), " --> ", Data.teacher1.netsalary(),
                           "€")

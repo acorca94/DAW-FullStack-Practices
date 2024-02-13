@@ -1,9 +1,12 @@
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //CREAR UN MÉDICO NUEVO (POR PANTALLA)
-        GestionMedicos.createMedic();
+        GestionMedicos gm = new GestionMedicos();
+
 
         //LEER/MOSTRAR MÉDICO
-        //GestionMedicos.showMedic();
+
     }
 }

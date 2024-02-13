@@ -1,9 +1,9 @@
 import java.time.LocalDate;
 
-//CLASE medico que extiende de persona
+//CLASE MEDICO
 public class Medic {
 
-    //ATRIBUTOS de clase medico
+    //ATRIBUTOS DE CLASE MÉDICO
     private String name;
     private int age;
     private String gender;
@@ -14,21 +14,19 @@ public class Medic {
 
 
     //CONSTRUCTOR DE CLASE MEDICO
-    public Medic(String name, int age, String gender, String dni, double salary, LocalDate start_date, Address address){
+    public Medic(String name, int age, String gender, String dni, double salary, int year, int month, int day, Address address){
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.dni = dni;
         this.salary = salary;
-        this.start_date = start_date;
+        this.start_date = LocalDate.of(year, month, day);
         this.address = address;
     }
 
 
     //GETTERS DE CLASE MEDICO
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
     public int getAge() {
         return age;

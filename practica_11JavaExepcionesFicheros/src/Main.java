@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+        //CREAR UN MÉDICO NUEVO (POR PANTALLA)
+        GestionMedicos.createMedic();
 
-        System.out.println("Hello world!");
+        //LEER/MOSTRAR MÉDICO
+        //GestionMedicos.showMedic();
     }
 }

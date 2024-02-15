@@ -1,9 +1,11 @@
-  {
-    "name": "Antonio",
-    "age": 29,
-    "gender": "Masculino",
-    "dni": "47340009-G",
-    "salary": 2500,
-    "start_date": "01/01/2020",
-    "Address": "Montes, 41749, Sevilla (Sevilla)"
-  }
+{
+  "name": "Antonio",
+  "age": 29,
+  "gender": "Masculino",
+  "dni": "47340009-G",
+  "salary": 2500,
+  "year": 20,
+  "month": 5,
+  "gay": 12,
+  "Address": "Montes, 41749, Sevilla (Sevilla)"
+}

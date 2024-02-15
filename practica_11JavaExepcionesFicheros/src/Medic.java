@@ -82,4 +82,17 @@ public class Medic {
         this.address = address;
     }
 
+
+    @Override
+    public String toString() {
+        return "Medic{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", dni='" + dni + '\'' +
+                ", salary=" + salary +
+                ", start_date=" + start_date +
+                ", address=" + address +
+                '}';
+    }
 }

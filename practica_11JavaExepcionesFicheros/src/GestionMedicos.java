@@ -14,6 +14,21 @@ public class GestionMedicos {
 
     }
 
+
+    //CREAR UN JSON DE UN OBJETO
+    public void createMedic() throws IOException {
+        Gson gson = new Gson();
+        LocalDate date = LocalDate.of(2004, 5, 1);
+        Address direccion1 = new Address("Mariano", 41749, "Sevilla", "Sevilla");
+        Medic medico1 = new Medic("Marta", 23, "Femenino", "47340009Y", 2000, date.getYear(), date.getMonthValue(), date.getDayOfMonth(), direccion1);
+
+        String json = gson.toJson(medico1.getName());
+
+        System.out.println(json);
+    }
+
+
+    //LEER UN ARCHIVO JSON
     public void showMedic() throws IOException {
         // create a reader
         Reader reader = Files.newBufferedReader(Paths.get("medico.json"));
@@ -27,25 +42,35 @@ public class GestionMedicos {
             System.out.println(entry.getKey() + " --> " + entry.getValue());
         }
 
-        // close reader
+        // CERRAR LECTURA
         reader.close();
     }
 
 
-    //CREAR UN JSON DE UN OBJETO
-    public void createMedic() throws IOException {
-        Gson gson = new Gson();
-        Address direccion1 = new Address("Mariano", 41749, "Sevilla", "Sevilla");
-        Medic medico1 = new Medic("Marta", 23, "Femenino", "47340009Y", 2000, 2004, 5, 20, direccion1);
+    //ESCRIBIR EN UN FICHERO JSON
+    public void writeMedic() throws IOException {
 
-        String json = gson.toJson(medico1);
+        String texto1 = "Hola mi gente";
+        String texto2 = "sois lo mejor del mundo";
+        try {
+            BufferedWriter bw = new  BufferedWriter(new FileWriter("medic.json"));
+            bw.write(texto1);
+            bw.newLine();
+            bw.write(texto2);
+            
+        } catch (IOException e) {
+            System.out.println("ERROR");
+        }
 
-        System.out.println(json);
     }
+
+    //ACTUALIZAR ARCHIVO JSON
     public void updateMedic(){
 
     }
 
+
+    //ELIMINAR ARCHIVO JSON
     public void deleteMedic(){
         File fichero = new File(" ");
 
@@ -54,7 +79,6 @@ public class GestionMedicos {
         else
             System.out.println("El fichero no pudo ser borrado");
     }
-
 
 
 

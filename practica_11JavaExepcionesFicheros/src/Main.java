@@ -15,5 +15,8 @@ public class Main {
         //CREAR UN JSON A TRAVES DE UN OBJETO
         gm.createMedic();
 
+        //ESCRIBIR EN UN FICHERO
+        gm.writeMedic();
+
     }
 }

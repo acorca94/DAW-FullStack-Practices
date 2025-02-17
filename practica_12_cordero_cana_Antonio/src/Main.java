@@ -56,7 +56,7 @@ public class Main {
             } else if (opcion==10) {
                 ejercicio10.Ej10();
             } else if (opcion==0){
-                System.out.println("Saliendo...");
+                System.out.println("Saliendo..." + "\n" + "Has salido con éxito. Gracias.");
             } else{
                 System.out.println("Número erróneo");
             }

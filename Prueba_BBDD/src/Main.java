@@ -18,7 +18,7 @@ public class Main {
             conn = DriverManager.getConnection(URL, USER, PASS);
             stmt = conn.createStatement();
 
-            //Seleccionamos base de datos
+            //Seleccionamos base de dato
             ResultSet rs = stmt.executeQuery("SELECT * FROM sakila.actor");
             //Otra forma de hacerlo sería asi:
                 //String consulta = "SELECT * FROM sakila.actor";
